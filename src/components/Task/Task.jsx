@@ -26,10 +26,10 @@ const Task = ({ task, handleUpdateTask, handleRemoveTask }) => {
       <input type="checkbox" data-testid="task-checkbox" 
       onChange={toggleStatus}
       checked={task.done}/>
-      <div data-testid="task-text"> {task.text}</div>
+      <div data-testid="task-text" className={styles.data}> {task.text}</div>
       {/* Counter here */}
       <Counter taskId={task.id} count={task.count} updateCount={updateCount} />
-      <button data-testid="task-remove-button"   onClick={() => handleRemoveTask(task.id)}>delete</button>
+      <button data-testid="task-remove-button" className={styles.btn}  onClick={() => handleRemoveTask(task.id)}>delete</button>
     </li>
   );
 };
