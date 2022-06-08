@@ -1,3 +1,14 @@
-.task {
-  /* Sample  */
+.task{
+  background-color: rgb(228, 224, 223);
+  padding: 1%;
+  text-align: center;
+  border: 2px solid rgb(60, 59, 59);
+}
+
+.done{
+  background-color: rgb(156, 234, 188);
+  padding: 1%;
+  text-align: center;
+  border: 2px solid rgb(62, 60, 60);
+  
 }
